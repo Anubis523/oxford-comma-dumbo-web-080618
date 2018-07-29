@@ -7,7 +7,7 @@ def oxford_comma(array)
   elsif (array.size > 2)
     element = array.shift
     if (array.size == 2)
-      element + ", and "
+      "#{element}, #{array.shift}, and #{array.shift}"
     end
     element+", "+oxford_comma(array)
   end
