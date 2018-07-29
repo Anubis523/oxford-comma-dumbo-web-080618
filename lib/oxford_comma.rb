@@ -8,6 +8,6 @@ def oxford_comma(array)
     element = array.shift
     if (array.size == 2)
     end
-    array.shift+", "+oxford_comma(array)
+    element+", "+oxford_comma(array)
   end
 end
