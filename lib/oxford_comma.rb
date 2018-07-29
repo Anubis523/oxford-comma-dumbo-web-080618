@@ -5,6 +5,9 @@ def oxford_comma(array)
   elsif (array.size == 2)
     array.join(' and ')
   elsif (array.size > 2)
+    element = array.shift
+    if (array.size == 2)
+    end
     array.shift+", "+oxford_comma(array)
   end
 end
