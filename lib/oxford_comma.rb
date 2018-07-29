@@ -6,5 +6,7 @@ def oxford_comma(array)
     "#{array.shift}, #{array.shift}, and #{array.shift}"
   elsif (array.size == 2)
     array.join(' and ')
+  elsif (array.size > 2)
+    "#{array.shift}, #{oxford_comma(array)}"
   end
 end
